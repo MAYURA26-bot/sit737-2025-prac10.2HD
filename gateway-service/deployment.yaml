@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fitness-gateway-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fitness-gateway-api
+  template:
+    metadata:
+      labels:
+        app: fitness-gateway-api
+    spec:
+      containers:
+        - name: fitness-gateway-api
+          image: mayura1994/fitness-gateway-api2
+          ports:
+            - containerPort: 5000
+          env:
+            - name: AUTH_SERVICE_URL
+              value: http://35.189.45.24:81
+            - name: WORKOUT_SERVICE_URL
+              value: http://34.151.127.133:82
+            - name: ANALYTICAL_SERVICE_URL
+              value: http://35.244.87.246:83
+            - name: MOVEGOALS_SERVICE_URL
+              value: http://35.197.182.114:85

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fitness-analytical-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: fitness-analytical-api
+  ports:
+    - protocol: TCP
+      port: 83
+      targetPort: 5003
+      nodePort: 30003   # Must be between 30000–32767

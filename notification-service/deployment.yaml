@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fitness-notification-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fitness-notification-api
+  template:
+    metadata:
+      labels:
+        app: fitness-notification-api
+    spec:
+      containers:
+        - name: fitness-notification-api
+          image: mayura1994/fitness-notification-api
+          ports:
+            - containerPort: 5004
+          env:
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: db-user
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: db-password
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: db-name
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: jwt-key
+            - name: EMAIL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: email-user
+            - name: EMAIL_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: email-pass

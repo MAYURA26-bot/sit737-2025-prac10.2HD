@@ -1,0 +1,2 @@
+REACT_APP_BACKEND_URL=https://fitness-tracker-app-6b9dbfd82bb1.herokuapp.com/api
+REACT_APP_ASSET_URL=https://fitness-tracker-app-6b9dbfd82bb1.herokuapp.com

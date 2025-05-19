@@ -1,0 +1,81 @@
+.authentication {
+  width: 100%;
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.authentication h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.authentication hr {
+  margin: 1rem 0 2rem;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.authentication form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.authentication label {
+  text-align: left;
+  font-weight: 500;
+  color: #555;
+}
+
+.authentication input,
+.authentication button {
+  font-size: 1rem;
+}
+
+.authentication input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.authentication button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.authentication button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.authentication button:hover:not(:disabled) {
+  background-color: #135ba1;
+}
+
+.authentication .button--inverse {
+  background-color: transparent;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+  margin-top: 1rem;
+}
+
+.authentication .button--inverse:hover {
+  background-color: #1976d2;
+  color: white;
+}

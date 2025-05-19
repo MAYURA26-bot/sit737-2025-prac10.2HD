@@ -1,0 +1,8 @@
+{
+    "env": {
+        "DB_USER": "s224231504",
+        "DB_PASSWORD": "N0Shp9D1ZAgAfhHM",
+        "DB_NAME": "fitnessTracker",
+        "JWT_KEY": "supersecret_dont_share"
+    }
+}

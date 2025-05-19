@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "s224231504",
+        "DB_PASSWORD": "N0Shp9D1ZAgAfhHM",
+        "DB_NAME": "fitnessTracker",
+        "EMAIL_USER":"mayuraselvarajah26@gmail.com",
+        "EMAIL_PASS":"qpfhycnrdzquxcta"
+    }
+}
