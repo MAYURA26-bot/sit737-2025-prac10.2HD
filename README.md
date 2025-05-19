@@ -17,9 +17,13 @@ This project is a fitness tracking web application built using **Node.js microse
 
 ## How to Deploy to GCP (GKE)
 
+## How to Deploy to GCP (GKE)
+-`gcloud auth login
+-`gcloud config set project <your-project-id>
+
 ### 1. Authenticate and Set Project
 ```bash
 gcloud auth login
 gcloud config set project <your-project-id>
+---
 
-### 2. Create Kubernetes Cluster
